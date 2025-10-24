@@ -280,7 +280,7 @@ table figcaption{
 
 }
 .sec h2{
-    font-family: 'f Frelly';
+    font-family: 'f Frelly', Arial, sans-serif;
     font-size: 50px;
     min-height: 1.2em; /* Ensure space for the typing text even when empty */
     margin: 0.5em;
@@ -388,3 +388,4 @@ table figcaption{
         animation-duration: 20s; /* Faster on mobile */
     }
 }
+
