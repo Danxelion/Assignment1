@@ -346,13 +346,6 @@ table figcaption{
     z-index: 10;
 }
 
-.polaroid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 /* Add varied rotations to polaroids */
 .polaroid-item:nth-child(1) { transform: rotate(-5deg); }
 .polaroid-item:nth-child(2) { transform: rotate(3deg); }
@@ -388,4 +381,5 @@ table figcaption{
         animation-duration: 20s; /* Faster on mobile */
     }
 }
+
 
