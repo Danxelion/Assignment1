@@ -1,0 +1,371 @@
+body{
+    background: #000000; 
+    color: #ebeaea; 	 
+    font-family: 'Berlin Sans FB', Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip; 
+}
+header{
+    background-color: rgba(20, 20, 20, 0.7); /* semi-transparent */
+    color: #fff; /* Replaced var(--nav-text) */
+    font-family: 'Bauhaus 93', Arial, Helvetica, sans-serif;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 5px 5px 12px 0px rgba(255, 255, 255, 0.5); /* cyberpunk glow */
+    backdrop-filter: blur(8px); /* blur effect */
+    -webkit-backdrop-filter: blur(8px); /* for Safari */
+}
+
+footer {
+    background: #000000; 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #bdbdbd; 
+    text-align: center;
+    padding: 0.05em 0;
+    font-size: 1em;
+    box-shadow: 5px -5px 12px 0px rgba(255, 255, 255, 0.5);
+    min-height: 20px;
+    margin-top: 3em;
+}
+
+.iframe-container {
+  max-width: 700px;     
+  margin: 0 auto 4em;       
+}
+
+.iframe-container iframe {
+  width: 100%;          
+  height: 400px;       
+  display: block;/* Ensures margin:auto works properly */
+  border: none;         
+}
+
+h1{
+    margin: 3.5em auto 2em 4em;
+    font-family: 'Britannic', Arial, Helvetica, sans-serif;
+}
+
+section a:link{
+    color:#ebeaea;
+    font-family: inherit;
+}
+
+section a:visited{
+    color: #ebeaea;
+}
+
+section a:hover{
+    color:#000000;
+    background-color: #fff;
+}
+
+.center-form {
+  max-width: 500px;
+  margin: 3em auto;
+  padding: 2em;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+input:required,
+textarea:required,
+select:required {
+  border: 2px solid #ff2a7f;     
+  background-color: #111;        
+  box-shadow: 0 0 8px #ff2a7f;   
+}
+
+fieldset {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 1.5em;
+}
+
+legend {
+  color: #eaeaea;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0 0.5em;
+}
+
+.center-form label {
+  margin-top: 1em;
+  display: block;
+  font-weight: bold;
+}
+
+.center-form input,
+.center-form textarea,
+.center-form select {
+  width: 100%;
+  padding: 0.6em;
+  margin-top: 0.3em;
+  border: 2px solid #555;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5em;
+}
+
+.center-form input:focus,
+.center-form select:focus,
+.center-form textarea:focus {
+  box-shadow: 0 0 8px #00eaff;
+  outline: none;
+}
+
+.button-group {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background-color: #3c5dff;
+  transform: scale(1.05);
+}
+
+.bg-icon {
+    position: absolute; 
+    top: 0.4em; 
+    left: 1em; 
+    width: 64px; 
+    height: 64px;
+    z-index: 3; 
+    box-shadow: 0 0 12px rgb(12, 137, 239); 
+    border: solid 1px white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none; /*no bullets*/
+    padding: 0;
+    margin: 0;
+}
+
+/*Add spacing for nav*/
+nav ul li {
+    margin: 0 3em;
+}
+
+nav ul li a{
+    color: #fff; 
+    background: transparent;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 6px;
+}
+
+nav ul li a.current-page{
+    color: white; 
+    text-decoration: underline;
+    text-decoration-thickness: 3px; 
+    text-underline-offset: 6px;
+}
+
+nav ul li a:visited{
+    color: white; 
+    text-decoration: none;
+}
+
+
+
+/*Spotlight Bos*/
+.sec {
+    max-width: 1000px;
+    margin: 4em auto 2em auto; /* Center it and give some vertical spacing */
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Soft glow */
+    text-align: center;
+    position: relative;
+}
+
+figure {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+figure img {
+  width: 400px;                
+  height: 500px;               
+  object-fit: cover;           /* Crop edges instead of stretching */
+  object-position: center;     
+  border-radius: 8px;          
+  box-shadow: 0 0 12px white;  
+}
+
+
+figcaption {
+  font-size: 1em;
+  color: #ebeaea;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+
+table {
+  margin: auto;
+}
+
+
+table figure {
+  border: none;
+  margin: 0 3em 1em;
+  text-align: center;
+}
+
+
+table figcaption{
+    border: none;
+    margin: 0 7em 3em;
+
+}
+.sec h2{
+    font-family: 'f Frelly';
+    font-size: 50px;
+    min-height: 1.2em; /* Ensure space for the typing text even when empty */
+    margin: 0.5em;
+    color: #fff;
+}
+
+.sec ul,ol li{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 1.5em;
+}
+
+.polaroid-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 4em 0;
+    padding: 2em 0;
+    position: relative;
+}
+
+.polaroid-scroll-track {
+    display: flex;
+    gap: 2em;
+    animation: scroll-left 30s linear infinite;
+    width: fit-content;
+}
+
+.polaroid-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.polaroid-item {
+    flex-shrink: 0;
+    width: 250px;
+    height: 180px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 
+                0 0 15px rgba(255, 255, 255, 0.2);
+
+}
+
+.polaroid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Removes extra space below image */
+}
+
+.polaroid-item:hover {
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 
+                0 0 25px rgba(255, 255, 255, 0.4);
+    z-index: 10;
+}
+
+.polaroid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Add varied rotations to polaroids */
+.polaroid-item:nth-child(1) { transform: rotate(-5deg); }
+.polaroid-item:nth-child(2) { transform: rotate(3deg); }
+.polaroid-item:nth-child(3) { transform: rotate(-2deg); }
+.polaroid-item:nth-child(4) { transform: rotate(4deg); }
+.polaroid-item:nth-child(5) { transform: rotate(-3deg); }
+.polaroid-item:nth-child(6) { transform: rotate(2deg); }
+.polaroid-item:nth-child(7) { transform: rotate(-5deg); }
+.polaroid-item:nth-child(8) { transform: rotate(3deg); }
+.polaroid-item:nth-child(9) { transform: rotate(-2deg); }
+.polaroid-item:nth-child(10) { transform: rotate(4deg); }
+.polaroid-item:nth-child(11) { transform: rotate(-3deg); }
+.polaroid-item:nth-child(12) { transform: rotate(2deg); }
+
+@media (max-width: 768px) {
+    main {
+        padding: 0.5em;
+        max-width: 98vw;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    .polaroid-item {
+        width: 180px;
+        height: 130px;
+    }
+    .polaroid-banner{
+         gap: 1.5em;
+        animation-duration: 20s; /* Faster on mobile */
+    }
+}
+
+
+
