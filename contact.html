@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Ink Gamers</title>
+    <meta name="description" content="This page shows club's contact.">
+    <link rel="icon" href="assets/img/icon.jpg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/icon.jpg" alt = "Epic Ink Gamers" class="bg-icon">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="contact.html" class="current-page">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="policy.html">Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="sec">
+            <h2>Main Contact</h2>
+            <ul style="text-decoration: none;">
+                <li><b>Leader's Gmail:</b> <a href="gogduy987@gmail.com">gogduy987@gmail.com</a></li>
+                <li><b>Leader's Phone Number:</b> (+84)794496838</li>
+            </ul>
+        </section>
+
+        <section>
+            <form class="center-form" action="#" method="post">
+                <fieldset>
+                    <legend>Member Registration Form</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="6" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="13" max="120" step="1" required>
+
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="satisfaction">Club Satisfaction (1–10):</label>
+                    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1">
+
+                    <label for="favcolor">Favorite Color:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#00eaff">
+
+                    <label for="resume">Upload Profile Picture:</label>
+                    <input type="file" id="resume" name="resume" accept=".jpg,.png,.jpeg">
+
+                    <label>Purpose of Joining:</label>
+                    <div class="radio-group">
+                    <label for="game"><input type="radio" name="type" id="game" value="game" required> Gaming</label>
+                    <label for="write"><input type="radio" name="type" id="write" value="write"> Writing</label>
+                    <label for="both"><input type="radio" name="type" id="both" value="both"> Both</label>
+                    </div>
+
+                    <label>Areas of Interest:</label>
+                    <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest" value="gaming"> Gaming</label>
+                    <label><input type="checkbox" name="interest" value="writing"> Writing</label>
+                    <label><input type="checkbox" name="interest" value="coding"> Coding</label>
+                    </div>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                    <optgroup label="Asia">
+                        <option value="vn">Vietnam</option>
+                        <option value="jp">Japan</option>
+                        <option value="kr">South Korea</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="uk">UK</option>
+                        <option value="fr">France</option>
+                    </optgroup>
+                    </select>
+
+                    <label for="message">Short Bio / Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+                    <label for="role">Preferred Role:</label>
+                    <input list="roles" id="role" name="role">
+                    <datalist id="roles">
+                    <option value="Leader">
+                    <option value="Designer">
+                    <option value="Programmer">
+                    <option value="Writer">
+                    </datalist>
+
+                    <input type="hidden" name="formID" value="QnQ-Register2025">
+
+                    <div class="button-group">
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Epic Ink Gamers</p>
+    </footer>
+</body>
+</html>
