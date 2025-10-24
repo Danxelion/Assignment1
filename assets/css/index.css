@@ -1,6 +1,23 @@
+:root {
+    /* Base Colors */
+    --color-bg-primary: #000000;         
+    --color-text-primary: #ffffff;       
+    --color-text-secondary: #fff;        
+    --color-text-footer: #bdbdbd;       
+    --color-text-content: #eaeaea;       
+
+    /* Accent & Interactive Colors */
+    --color-shadow-black: black;        
+
+    /* Header/Footer/Glow */
+    --color-header-bg-semi: rgba(20, 20, 20, 0.7); 
+    --color-glow-white-semi: rgba(255, 255, 255, 0.5); 
+    --color-glow-icon-blue: rgb(12, 137, 239); 
+}
+
 body{
-    background: #000000; 
-    color: #ffffff; 	 
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
     font-family: 'Berlin Sans FB', Arial, sans-serif;
     font-size: 18px;
     margin: 0;
@@ -9,12 +26,12 @@ body{
 }
 
 header{
-    background-color: rgba(20, 20, 20, 0.7); /* semi-transparent */
-    color: #fff; /* Replaced var(--nav-text) */
+    background-color: var(--color-header-bg-semi); /* semi-transparent */
+    color: var(--color-text-secondary); 
     font-family: 'Bauhaus 93', Arial, Helvetica, sans-serif;
     padding: 1.5em;
     text-align: center;
-    box-shadow: 5px 5px 12px 0px rgba(255, 255, 255, 0.5); /* cyberpunk glow */
+    box-shadow: 5px 5px 12px 0px var(--color-glow-white-semi); /* cyberpunk glow */
     backdrop-filter: blur(8px); /* blur effect */
     -webkit-backdrop-filter: blur(8px); /* for Safari */
 }
@@ -22,7 +39,7 @@ header{
 h1{
     font-family: "Road Rage", Arial, sans-serif;
     letter-spacing: 2px;
-    text-shadow: 0 0 30px black;
+    text-shadow: 0 0 30px var(--color-shadow-black);
     margin: auto;
     left : 29em;
     top: 12.9em;
@@ -43,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: #fff; 
+    color: var(--color-text-secondary);
     background: transparent;
     text-decoration: none;
     font-size: 1em;
@@ -52,22 +69,22 @@ nav ul li a{
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #fff;
+    color: var(--color-text-secondary);
     font-size: 1.1em;
     text-decoration: underline;
-    text-decoration-thickness: 3px; 
+    text-decoration-thickness: 3px;
     text-underline-offset: 6px;
 }
 
 nav ul li a.current-page{
-    color: white; 
+    color: var(--color-text-primary);
     text-decoration: underline;
-    text-decoration-thickness: 3px; 
+    text-decoration-thickness: 3px;
     text-underline-offset: 6px;
 }
 
 nav ul li a:visited{
-    color: white; 
+    color: var(--color-text-primary);
     text-decoration: none;
 }
 
@@ -76,13 +93,13 @@ main{
 }
 
 footer {
-    background: #000000; 
+    background: var(--color-bg-primary);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #bdbdbd; 
+    color: var(--color-text-footer);
     text-align: center;
     padding: 0.05em 0;
     font-size: 1em;
-    box-shadow: 5px -5px 12px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 5px -5px 12px 0px var(--color-glow-white-semi);
 }
 
 .bg-container{
@@ -90,8 +107,8 @@ footer {
     width: 100%;
     height: 100%;
     overflow: hidden; /* Prevents overflow of video */
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -106,20 +123,20 @@ footer {
 }
 
 .bg-icon {
-    position: absolute; 
-    top: 0.4em; 
-    left: 1em; 
-    width: 64px; 
+    position: absolute;
+    top: 0.4em;
+    left: 1em;
+    width: 64px;
     height: 64px;
-    z-index: 3; 
-    box-shadow: 0 0 12px rgb(12, 137, 239); 
-    border: solid 1px white;
+    z-index: 3;
+    box-shadow: 0 0 12px var(--color-glow-icon-blue);
+    border: solid 1px var(--color-text-primary);
 }
 
 .main-content{
     position: relative;
     z-index:2;
-    color: #eaeaea; 
+    color: var(--color-text-content);
 }
 
 /* Responsive breakpoint for tablets/phones */
