@@ -52,6 +52,10 @@ footer {
     margin-top: 3em;
 }
 
+main{
+    min-height: 100vh;
+}
+
 .iframe-container {
     max-width: 700px;     
     margin: 0 auto 4em;       
@@ -381,5 +385,6 @@ table figcaption{
         animation-duration: 20s; /* Faster on mobile */
     }
 }
+
 
 
