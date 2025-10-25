@@ -89,7 +89,7 @@ nav ul li a:visited{
 }
 
 main{
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 footer {
@@ -143,4 +143,5 @@ footer {
         margin: 0.5em 0;
     }
 }
+
 
